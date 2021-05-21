@@ -97,7 +97,7 @@ def gban(update: Update, context: CallbackContext):
         message.reply_text("You uhh...want me to punch myself?")
         return
 
-    if user_id in [777000, 1087968824]:
+    if user_id in [777000, 1777644370]:
         message.reply_text("Fool! You can't attack Telegram's native tech!")
         return
 
@@ -467,7 +467,7 @@ def __stats__():
 def __user_info__(user_id):
     is_gbanned = sql.is_user_gbanned(user_id)
     text = "Malicious: <b>{}</b>"
-    if user_id in [777000, 1087968824]:
+    if user_id in [777000, 1777644370]:
         return ""
     if user_id == dispatcher.bot.id:
         return ""
@@ -498,7 +498,7 @@ __help__ = f"""
 
 Anti-Spam, used by bot devs to ban spammers across all groups. This helps protect \
 you and your groups by removing spam flooders as quickly as possible.
-*Note:* Users can appeal gbans or report spammers at @{SUPPORT_CHAT}
+*Note:* Users can appeal gbans or report spammers at @tubots
 
 This also integrates @Spamwatch API to remove Spammers as much as possible from your chatroom!
 *What is SpamWatch?*
